@@ -42,7 +42,7 @@ const Promo = (props: PromoType) => {
     <div
       className={`promo-container flex ${flexDirection} md:py-[20px] ${promoContainerLeftPadding} ${promoContainerRightPadding}`}
     >
-      <div className="content-container md:px-[90px] md:py-[40px] px-[45px] py-[20px]">
+      <div className="content-container md:px-[90px] md:py-[40px] px-[30px] py-[20px] text-justify">
         <h2 className="promo-headline">{title}</h2>
         <p>{description}</p>
         <div className="promo-ctas">

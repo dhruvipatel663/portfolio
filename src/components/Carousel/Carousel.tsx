@@ -21,10 +21,6 @@ export default function Carousel({
   autoSlideInterval?: number;
 }) {
   const [curr, setCurr] = useState(0);
-  // const prev = () =>
-  //   setCurr((curr) => (curr === 0 ? sliderData.slide.length - 1 : curr - 1));
-  // const next = () =>
-  //   setCurr((curr) => (curr === sliderData.slide.length - 1 ? 0 : curr + 1));
 
   const prev = useCallback(
     () =>
@@ -67,7 +63,7 @@ export default function Carousel({
                 key={index}
                 className="min-w-full slider-container md:px-30 md:py-300 px-20 pt-100 pb-200"
               >
-                <h2>{s.title}</h2>
+                <h2 className="text-sm/9">{s.title}</h2>
                 <p>{s.description}</p>
               </div>
             );

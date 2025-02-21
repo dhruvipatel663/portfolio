@@ -190,8 +190,6 @@ body {
 .certificate-landing-container {
   margin-top: 25px;
    width: auto;
-   display: flex;
-   flex-direction: column;
    gap: 15px;
 }
 

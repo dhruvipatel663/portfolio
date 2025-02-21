@@ -39,6 +39,7 @@ const CertificateLanding = () => {
 
   const [viewMode, setViewMode] = useState("card"); // Default view mode is 'card'
   const [isMounted, setIsMounted] = useState(false); // To track if the component is mounted
+  const [isMobile, setIsMobile] = useState(false);
 
   // On mount, check if there's a saved viewMode in sessionStorage
   useEffect(() => {
@@ -68,6 +69,17 @@ const CertificateLanding = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    handleResize(); // Check on initial render
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const iconStyle = (mode: string) => ({
     backgroundColor: viewMode === mode ? "rgb(18 32 46 / 1)" : "", // Blue if selected, white otherwise
     color: viewMode === mode ? "white" : "rgb(18 32 46 / 1)", // White text if selected, black otherwise
@@ -90,14 +102,16 @@ const CertificateLanding = () => {
           >
             cards
           </span>
-          <span
-            className="material-symbols-outlined transition-colors duration-300"
-            onClick={() => setViewMode("list")}
-            title="list view"
-            style={iconStyle("list")}
-          >
-            list
-          </span>
+          {!isMobile ? (
+            <span
+              className="material-symbols-outlined transition-colors duration-300"
+              onClick={() => setViewMode("list")}
+              title="list view"
+              style={iconStyle("list")}
+            >
+              list
+            </span>
+          ) : null}
         </div>
         {viewMode === "card" ? (
           <div
@@ -114,7 +128,9 @@ const CertificateLanding = () => {
             ))}
           </div>
         ) : (
-          <div className={`certificate-landing-container`}>
+          <div
+            className={`certificate-landing-container hidden md:flex md:flex-col`}
+          >
             {certificateData.map((data) => (
               <div className="cl-card-container flex rounded-3xl" key={data.id}>
                 <div className="cl-image certificate-img px-[15px]">

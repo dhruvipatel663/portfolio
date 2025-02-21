@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <>
       <div className="footer-container text-white">
@@ -37,6 +38,24 @@ const Footer = () => {
                   Hackerrank
                 </Link>
               </div>
+              <div className="follow-me-link">
+                <Link
+                  href="https://github.com/dhruvipatel663"
+                  className="social-link-item underline underline-offset-[5px]"
+                  target="_blank"
+                >
+                  GitHub
+                </Link>
+              </div>
+              <div className="follow-me-link">
+                <Link
+                  href="https://leetcode.com/u/dhruvi_r_patel/"
+                  className="social-link-item underline underline-offset-[5px]"
+                  target="_blank"
+                >
+                  LeetCode
+                </Link>
+              </div>
             </div>
           </div>
           <div className="logo !text-white p-[10px]">
@@ -48,9 +67,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="copyright m-auto md:w-[500px] text-center px-[10px] py-[30px]">
-          &copy; 2025 Dhruvi Patel, All Rights Reserved.
+          &copy; {currentYear} Dhruvi Patel, All Rights Reserved.
         </div>
-        {/* <Logo /> */}
       </div>
     </>
   );

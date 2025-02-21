@@ -107,17 +107,14 @@ const photos = [
     width: 1300,
     height: 600,
   },
+  {
+    id: 20,
+    src: "/images/MAN09921.jpg",
+    width: 900,
+    height: 600,
+  },
 ];
-// type PhotoGalleryProps = {
-//   photo: Photo | undefined;
-// };
 
-// type Photo = {
-//   id: number,
-//   src: string,
-//   width: string,
-//   height: string,
-// }
 export default function PhotoGallery() {
   const [index, setIndex] = useState(-1);
   if (!photos || photos.length === 0) return null;

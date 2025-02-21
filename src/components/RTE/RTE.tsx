@@ -57,7 +57,7 @@ const RTE = ({ certificate }: CertificateProps) => {
           </div>
           <div className="rte-details p-[20px] text-lg">
             <h2 className="md:text-4xl font-black text-3xl">{title}</h2>
-            <p className="py-5">{details}</p>
+            <p className="py-5 text-justify">{details}</p>
             <p>
               {issuingOrganizationText}: {issuingOrganization}
             </p>

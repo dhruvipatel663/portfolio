@@ -104,7 +104,7 @@ const ContactForm = () => {
 
         <div className="form-container md:grid md:grid-cols-2 md:mx-10 md:min-w-[500px]">
           <div className="form relative bg-white text-center md:m-[5px] m-10 border rounded-2xl border-gray-300 text-white grid">
-            <div className="contact-form-container m-auto">
+            <div className="contact-form-container m-auto md:p-0 py-[10px]">
               {!submitted ? (
                 <form
                   noValidate
