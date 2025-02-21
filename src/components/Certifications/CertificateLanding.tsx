@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Certificate from "./Certificate";
 import Link from "next/link";
 import Image from "next/image";
+import "material-symbols";
 
 const CertificateLanding = () => {
   const certificateData = [
