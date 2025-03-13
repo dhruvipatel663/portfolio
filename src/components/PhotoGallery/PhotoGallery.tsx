@@ -108,9 +108,33 @@ const photos = [
     height: 600,
   },
   {
-    id: 20,
+    id: 21,
     src: "/images/MAN09921.jpg",
     width: 900,
+    height: 600,
+  },
+  {
+    id: 22,
+    src: "/images/IMG20240322201414.jpg",
+    width: 450,
+    height: 600,
+  },
+  {
+    id: 23,
+    src: "/images/IMG20240913174935.jpg",
+    width: 550,
+    height: 600,
+  },
+  {
+    id: 24,
+    src: "/images/IMG20241021094257.jpg",
+    width: 900,
+    height: 600,
+  },
+  {
+    id: 25,
+    src: "/images/IMG20241023185921.jpg",
+    width: 450,
     height: 600,
   },
 ];

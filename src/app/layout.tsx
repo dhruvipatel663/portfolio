@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import Head from "next/head";
+import BackToTop from "@/components/BackToTop/BackToTop";
 
 export const metadata: Metadata = {
   title: "Dhruvi's Portfolio",
@@ -29,6 +30,7 @@ export default function RootLayout({
         </header>
         {children}
         <footer>
+          <BackToTop />
           <Footer />
         </footer>
       </body>
