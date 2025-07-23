@@ -103,7 +103,7 @@ const CertificateDetail = () => {
       title: "C++ Course",
       description:
         "Strengthened understanding of C++ fundamentals and STL with practical application, enabling effective and efficient code development.",
-      image: "/images/cppcL.png",
+      image: "/images/CPlusPlus1.jpg",
       issuingOrganizationText: "Issuing organization",
       issuingOrganization: "GeeksForGeeks",
       issuedOnText: "Issued on",
@@ -129,7 +129,7 @@ const CertificateDetail = () => {
     (x) => x.id.toString() === params.certificateId?.toString()
   );
 
-  console.log("matchingCertificate:", matchingCertificate);
+  // console.log("matchingCertificate:", matchingCertificate);
 
   const certificateDetailBanner = {
     title: matchingCertificate?.title,

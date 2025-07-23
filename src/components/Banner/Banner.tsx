@@ -23,7 +23,7 @@ const Banner = (props: BannerType) => {
   }
   return (
     <div
-      className={`banner-container ${classTextAlign} flex flex-wrap text-white flex items-center justify-center w-full min-h-[450px] p-[25px] mb-[20px]`}
+      className={`banner-container ${classTextAlign} flex flex-wrap text-white items-center justify-center w-full min-h-[450px] p-[25px] mb-[20px]`}
     >
       <div className="banner-text md:basis-1/2 p-[15px]">
         {title && (
