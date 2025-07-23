@@ -137,6 +137,12 @@ const photos = [
     width: 450,
     height: 600,
   },
+  {
+    id: 26,
+    src: "/images/dhruvi-headshot.jpeg",
+    width: 450,
+    height: 600,
+  },
 ];
 
 export default function PhotoGallery() {

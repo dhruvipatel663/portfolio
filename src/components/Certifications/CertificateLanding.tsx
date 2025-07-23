@@ -35,6 +35,13 @@ const CertificateLanding = () => {
         "Demonstrated proficiency in implementing headless architectures with Sitecore XM Cloud, integrating modern front-end frameworks with Sitecore's robust backend for seamless digital experiences.",
       image: "/images/sitecore.png",
     },
+    {
+      id: 5,
+      title: "C++ Course",
+      description:
+        "Strengthened understanding of C++ fundamentals and STL with practical application, enabling effective and efficient code development.",
+      image: "/images/CPlusPlus1.jpg",
+    },
   ];
 
   const [viewMode, setViewMode] = useState("card"); // Default view mode is 'card'

@@ -98,6 +98,31 @@ const CertificateDetail = () => {
       details:
         "I have demonstrated proficiency in implementing headless architectures with Sitecore XM Cloud, effectively integrating modern front-end frameworks like React and Next.js with Sitecore's powerful backend to deliver seamless and dynamic digital experiences. By leveraging Sitecore XM Cloud's headless capabilities, I am able to decouple the content management system from the front-end presentation, enabling the creation of highly flexible, scalable, and customizable web applications. I utilize React, a popular JavaScript library, to build interactive user interfaces that are both dynamic and responsive. Alongside React, I integrate Next.js to optimize the development process with its powerful features such as server-side rendering (SSR) and static site generation (SSG), ensuring fast load times and improved SEO performance. To further enhance the visual and layout experience, I incorporate Tailwind CSS, a utility-first CSS framework, to rapidly design and style components while maintaining a consistent, clean, and responsive design system. Additionally, I use TypeScript to ensure type safety and improved code quality, making the development process more efficient and reducing the likelihood of runtime errors. This combination of Sitecore XM Cloud with modern frameworks and technologies allows me to create headless, scalable digital experiences that are highly performant, maintainable, and adaptable to the evolving needs of users and businesses.",
     },
+    {
+      id: 5,
+      title: "C++ Course",
+      description:
+        "Strengthened understanding of C++ fundamentals and STL with practical application, enabling effective and efficient code development.",
+      image: "/images/cppcL.png",
+      issuingOrganizationText: "Issuing organization",
+      issuingOrganization: "GeeksForGeeks",
+      issuedOnText: "Issued on",
+      issuedOn: "July 2025",
+      credintialUrlText: "Credintial URL",
+      credintialUrl:
+        "https://media.geeksforgeeks.org/courses/certificates/7ae1f7c3f03343613d2c9e6a17566a5e.pdf",
+      skills: [
+        {
+          title: "C++",
+        },
+        {
+          title: "Data Structure and Algorithm",
+        },
+      ],
+      certificateImage: "/images/cpp-certificate.jpg",
+      details:
+        "Completed a foundational to intermediate-level C++ programming course that covered key concepts such as syntax, data types, functions, arrays, pointers, and object-oriented programming including classes, inheritance, and polymorphism. The course also introduced a comprehensive overview of the Standard Template Library (STL), including vectors, maps, sets, stacks, queues, and commonly used algorithms. In addition to the coursework, I actively practiced a variety of coding problems focused on arrays, strings, and STL containers, which helped strengthen my problem-solving skills and deepen my understanding of C++ and its real-world applications.",
+    },
   ];
 
   const matchingCertificate = certificateData.find(
