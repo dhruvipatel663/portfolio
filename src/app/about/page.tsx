@@ -10,7 +10,7 @@ const about = () => {
   };
   const PromoData1 = {
     title: "DX Enginner",
-    description: `I am Dhruvi Patel, a certified Digital Experience (DX) Engineer with over 2 years of hands-on experience in developing scalable and efficient digital solutions using Sitecore JSS and Headless architectures. My expertise spans backend development with C# and .NET MVC, as well as frontend technologies such as React, Next.js, TypeScript, and Tailwind CSS, combined with advanced Sitecore concepts (XP, XM, XM Cloud) to deliver exceptional user experiences.
+    description: `I am Dhruvi Patel, a certified Digital Experience (DX) Engineer with over 4+ years of hands-on experience in developing scalable and efficient digital solutions using Sitecore JSS and Headless architectures. My expertise spans backend development with C# and .NET MVC, as well as frontend technologies such as React, Next.js, TypeScript, and Tailwind CSS, combined with advanced Sitecore concepts (XP, XM, XM Cloud) to deliver exceptional user experiences.
 
 I have a strong academic foundation in Computer Engineering and have progressively advanced my career from an Associate Backend Developer Intern to a DX Engineer. My journey reflects my adaptability, technical proficiency, and a steadfast commitment to quality.
 
